@@ -8,7 +8,7 @@ The file named wikipedia_scraper.ipynb contains exercise instructions, while the
 ## Features 🚀
 
 - Retrieve data about world leaders and their countries via an easy-to-use API.
-- Extract useful information such as the leader's name, country, position, and more.
+- Extract useful information such as the leader's name, country, position, and a feature to scrape through their wikipedia page and get the first paragraph.
 - Simple Python script utilizing **requests** to interact with the API and **JSON** for structured data.
 
 ---
