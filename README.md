@@ -36,7 +36,7 @@ Before running this project, you'll need to install a few dependencies. These ar
 
    This will install all necessary libraries, including:
    - `requests` (for making HTTP requests to the API)
-   - `json` (for working with the API responses)
+   - `beautifulsoup` (to scrape and parse html files)
 
 ---
 
@@ -52,7 +52,7 @@ Before running this project, you'll need to install a few dependencies. These ar
 2. Run the scraper script (e.g., `leaders_scraper.py`) to start retrieving data from the API:
 
    ```bash
-   python leaders_scraper.py
+   python3 leaders_scraper.py
    ```
 
 
