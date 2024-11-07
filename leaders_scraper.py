@@ -60,7 +60,7 @@ def get_leaders():
 
 def save(leaders_per_country):
     with open("leaders_per_country.json", "w", encoding="utf-8") as json_file:
-        json.dump(leaders_per_country, json_file, ensure_ascii=False, indent=4)
+        json.dump(leaders_per_country, json_file, ensure_ascii=False)
 
 leaders_per_country = get_leaders()
 save(leaders_per_country)
