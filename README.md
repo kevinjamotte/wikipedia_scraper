@@ -54,7 +54,6 @@ Before running this project, you'll need to install a few dependencies. These ar
    python leaders_scraper.py
    ```
 
-   Replace `leaders_scraper.py` with the actual name of the script you're running.
 
 3. The script will fetch data from the API and print or save it in a structured format (such as a JSON file).
 
