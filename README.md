@@ -1,6 +1,7 @@
 # Country Leaders API Scraper 🌍💼
 
-Welcome to the **Country Leaders API Scraper** project! This Python script allows you to scrape data from the public **Country Leaders API** to retrieve information about world leaders, their countries, and more. 🇺🇳✨
+Welcome to the **Country Leaders API Scraper** project from BeCode! This Python script allows you to scrape data from the public **Country Leaders API** to retrieve information about world leaders, their countries, and more. 🇺🇳✨
+The file named wikipedia_scraper.ipynb contains exercise instructions, while the leaders_per_country.json is an example of output file
 
 ---
 
