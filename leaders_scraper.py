@@ -15,7 +15,7 @@ def get_first_paragraph(wikipedia_url, session):
     first_paragraph = ""
     req_wiki = session.get(wikipedia_url).text
     soup = bs(req_wiki, "html.parser")
-    regex_birthdate = r"\d{4}"
+    regex_birthdate = r"1\d{2,3}"
     for para in soup.find_all("p"):
         if re.findall(regex_birthdate, para.get_text()):
             first_paragraph = para.get_text()
