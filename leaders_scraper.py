@@ -13,10 +13,12 @@ def get_first_paragraph(wikipedia_url,session):
     first_paragraph = ''
     req_wiki = session.get(wikipedia_url).text 
     soup = bs(req_wiki, 'html.parser')
+    regex_birthdate = r'\d{4}'
+    regex_birthdate = r'\d{4}'
     for para in soup.find_all("p"): 
-        if len(para)>8:
-            first_paragraph = (para.get_text())
-            #first_paragraph.append(para.get_text())
+        if re.findall(regex_birthdate, para.get_text()):
+            first_paragraph = para.get_text()
+            print(first_paragraph)
             break
     first_paragraph = re.sub(r'\[.*?\]', '', first_paragraph)
     first_paragraph = re.sub(r'\[.*?\]', '', first_paragraph)
@@ -55,6 +57,7 @@ def get_leaders():
             for leader in leaders_dict[i]:
                 wikipedia_url = leader['wikipedia_url']
                 first_paragraph = get_first_paragraph(wikipedia_url, session)
+                print(first_paragraph)
                 leader['first_paragraph'] = first_paragraph
     return leaders_dict
 
